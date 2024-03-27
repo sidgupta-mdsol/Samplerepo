@@ -8,4 +8,4 @@ def failure():
     print("abnormal termination")
     sys.exit(1)
 
-faliure()
+failure()
