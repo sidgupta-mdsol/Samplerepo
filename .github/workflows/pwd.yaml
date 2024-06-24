@@ -1,0 +1,23 @@
+name: finding default path of runner
+on:
+  push:
+  workflow_dispatch:
+jobs:
+  pwd:
+    runs-on: ubuntu-latest
+    steps: 
+      - name: 1. print working directory
+        run: |
+          pwd
+          ls
+          
+      - name: checkout repo
+        uses: actions/checkout@v4
+        
+      - name: 2. print working directory
+        run: |
+          pwd
+          ls
+        
+          
+    
